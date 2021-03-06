@@ -1,0 +1,15 @@
+/run/initialize
+/control/verbose 1
+/tracking/verbose 1
+/event/verbose 1
+/gps/verbose 2
+
+# Set Gamma particle preset and 24 mm distnace
+/B1/Source/SetParticlePreset 1
+/B1/Source/StandDistance     24. mm
+
+# Set Filename
+/B1/Analysis/SetFilename     ./data/gamma_24mm_1M.root
+
+# run 1M particles 
+/run/beamOn 1000000

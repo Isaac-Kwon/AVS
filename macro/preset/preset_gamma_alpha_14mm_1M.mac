@@ -1,0 +1,20 @@
+/run/initialize
+/control/verbose 1
+/tracking/verbose 1
+/event/verbose 1
+/gps/verbose 2
+
+# Set gamma particle with alpha profile preset and 14 mm distnace
+/B1/Source/SetParticlePreset 0
+/B1/Source/StandDistance     14. mm
+/gps/particle gamma
+/gps/ene/mono 59.5409 keV
+
+# Set Filename
+/B1/Analysis/SetFilename     ./data/preset_gamma_alpha_14mm_1M.root
+
+/B1/Analysis/RecordPrimaryOnly 1
+/B1/Analysis/SetRecordSet 100
+
+# run 10k particles 
+/run/beamOn 1000000
