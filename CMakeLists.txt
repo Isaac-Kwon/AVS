@@ -124,6 +124,11 @@ add_executable(AVS AVSmain.cc ${sources} ${headers})
 target_include_directories(AVS PRIVATE ${ROOT_INCLUDE_DIRS})
 target_link_libraries(AVS ${Geant4_LIBRARIES} ${ROOT_LIBRARIES})
 
+add_executable(AVS_condor AVScondor.cc ${sources} ${headers})
+target_include_directories(AVS_condor PRIVATE ${ROOT_INCLUDE_DIRS})
+target_link_libraries(AVS_condor ${Geant4_LIBRARIES} ${ROOT_LIBRARIES})
+
+
 SET(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wunused-variable -Wunused-parameter")
 include(CPack)
 #-------------------------------------------------------
