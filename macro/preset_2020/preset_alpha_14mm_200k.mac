@@ -5,13 +5,13 @@
 /gps/verbose 2
 
 # Set Alpha particle preset and 14 mm distnace
-/B1/Source/SetParticlePreset 0
-/B1/Source/StandDistance     14. mm
+/AVS/Source/SetParticlePreset 0
+/AVS/Source/StandDistance     14. mm
 
 # Set Filename
-/B1/Analysis/SetFilename     ./data/alpha_14mm_200k.root
+/AVS/Analysis/SetFilename     ./data/alpha_14mm_200k.root
 
-/B1/Analysis/RecordPrimaryOnly 1
+/AVS/Analysis/RecordPrimaryOnly 1
 
 # run 10k particles 
 /run/beamOn 200000

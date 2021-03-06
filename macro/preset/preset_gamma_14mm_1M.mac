@@ -5,14 +5,14 @@
 /gps/verbose 2
 
 # Set Gamma particle preset and 14 mm distnace
-/B1/Source/SetParticlePreset 1
-/B1/Source/StandDistance     14. mm
+/AVS/Source/SetParticlePreset 1
+/AVS/Source/StandDistance     14. mm
 
 # Set Filename
 # /B1/Analysis/SetFilename     ./data/preset_gamma_14mm_1M.root
 
-/B1/Analysis/RecordPrimaryOnly 1
-/B1/Analysis/SetRecordSet 100
+/AVS/Analysis/RecordPrimaryOnly 1
+/AVS/Analysis/SetRecordSet 100
 
 # run 1M particles 
 /run/beamOn 1000000
