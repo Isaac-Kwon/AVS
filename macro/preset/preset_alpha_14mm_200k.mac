@@ -8,7 +8,7 @@
 /AVS/Source/SetParticlePreset 0
 /AVS/Source/StandDistance     14. mm
 
-# /B1/Analysis/SetFilename     ./data/preset_alpha_14mm_200k.root
+# /AVS/Analysis/SetFilename     ./data/preset_alpha_14mm_200k.root
 
 /AVS/Analysis/RecordPrimaryOnly 1
 /AVS/Analysis/SetRecordSet 100

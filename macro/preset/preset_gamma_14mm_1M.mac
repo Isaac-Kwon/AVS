@@ -9,7 +9,7 @@
 /AVS/Source/StandDistance     14. mm
 
 # Set Filename
-# /B1/Analysis/SetFilename     ./data/preset_gamma_14mm_1M.root
+# /AVS/Analysis/SetFilename     ./data/preset_gamma_14mm_1M.root
 
 /AVS/Analysis/RecordPrimaryOnly 1
 /AVS/Analysis/SetRecordSet 100
