@@ -8,7 +8,7 @@
 /B1/Source/SetParticlePreset 0
 /B1/Source/StandDistance     14. mm
 
-/B1/Analysis/SetFilename     ./data/preset_alpha_14mm_200k.root
+# /B1/Analysis/SetFilename     ./data/preset_alpha_14mm_200k.root
 
 /B1/Analysis/RecordPrimaryOnly 1
 /B1/Analysis/SetRecordSet 100

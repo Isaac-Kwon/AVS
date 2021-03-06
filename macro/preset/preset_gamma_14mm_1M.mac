@@ -9,7 +9,7 @@
 /B1/Source/StandDistance     14. mm
 
 # Set Filename
-/B1/Analysis/SetFilename     ./data/preset_gamma_14mm_1M.root
+# /B1/Analysis/SetFilename     ./data/preset_gamma_14mm_1M.root
 
 /B1/Analysis/RecordPrimaryOnly 1
 /B1/Analysis/SetRecordSet 100

@@ -11,7 +11,7 @@
 /gps/ene/mono 59.5409 keV
 
 # Set Filename
-/B1/Analysis/SetFilename     ./data/preset_gamma_alpha_14mm_1M.root
+# /B1/Analysis/SetFilename     ./data/preset_gamma_alpha_14mm_1M.root
 
 /B1/Analysis/RecordPrimaryOnly 1
 /B1/Analysis/SetRecordSet 100
