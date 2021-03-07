@@ -1,7 +1,12 @@
 /run/initialize
+# /control/verbose 1
+# /tracking/verbose 0
+# /event/verbose 0
+# /gps/verbose 1
+
 /control/verbose 1
-/tracking/verbose 0
-/event/verbose 0
+/tracking/verbose 1
+/event/verbose 1
 /gps/verbose 1
 
 /gps/particle    alpha
