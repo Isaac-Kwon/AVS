@@ -70,9 +70,9 @@ void AVSRunAction::EndOfRunAction(const G4Run* run)
 
   fAnalysisManager->Write();
   
-  fAnalysisManager->GetTreeSource()->Print();
-  fAnalysisManager->GetTreeStepper()->Print();
-  fAnalysisManager->GetTreeTrack()->Print();
+  // fAnalysisManager->GetTreeSource()->Print();
+  // fAnalysisManager->GetTreeStepper()->Print();
+  // fAnalysisManager->GetTreeTrack()->Print();
 
   // Print
   //  
