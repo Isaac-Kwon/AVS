@@ -33,14 +33,10 @@ AVSAnalysisManager::~AVSAnalysisManager(){
 void AVSAnalysisManager::Destroy(){
   G4cout<<"AnalysisManager Closing file."<<G4endl;
   if(fFile){
-    fFile->Close("R");
-    // fFile->Close("");
+    fFile->Delete("*");
   }
   G4cout<<"AnalysisManager End of closing."<<G4endl;
   G4cout<<fTreeSource<<"\t"<<fTreeStepper <<"\t"<<fTreeTrack<<G4endl;
-  if (fTreeSource) fTreeSource->Delete();
-  if (fTreeTrack) fTreeTrack->Delete(); 
-  if (fTreeStepper) fTreeStepper->Delete();
 }
 
 
