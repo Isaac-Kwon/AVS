@@ -1,0 +1,22 @@
+/run/initialize
+# /control/verbose 1
+# /tracking/verbose 0
+# /event/verbose 0
+# /gps/verbose 1
+
+/control/verbose 1
+/tracking/verbose 1
+/event/verbose 1
+/gps/verbose 1
+
+/gps/particle    alpha
+/gps/pos/type    Point
+/gps/pos/centre  0. 14. 0.  mm
+/gps/direction   0. -1. 0. 
+# /gps/ang/type    iso
+/gps/ene/type    Mono
+/gps/ene/mono    5.486   MeV
+
+/AVS/Analysis/SetRecordSet 101
+/AVS/Analysis/RecordPrimaryOnly 1
+/run/beamOn 1
