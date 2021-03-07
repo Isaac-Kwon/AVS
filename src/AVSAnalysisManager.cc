@@ -378,3 +378,9 @@ void AVSAnalysisManager::DefineCommand(){
 TTree* AVSAnalysisManager::GetTreeSource(){return fTreeSource;}
 TTree* AVSAnalysisManager::GetTreeStepper(){return fTreeStepper;}
 TTree* AVSAnalysisManager::GetTreeTrack(){return fTreeTrack;}
+
+void AVSAnalysisManager::AutoSave(){
+  fTreeSource->AutoSave();
+  fTreeStepper->AutoSave();
+  fTreeTrack->AutoSave();
+}

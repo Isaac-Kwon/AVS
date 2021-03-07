@@ -165,6 +165,8 @@ class AVSAnalysisManager{
     TTree* GetTreeSource();
     TTree* GetTreeStepper();
     TTree* GetTreeTrack();
+
+    void AutoSave();
     
     
     void Write();
