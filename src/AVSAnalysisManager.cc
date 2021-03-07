@@ -279,8 +279,12 @@ void AVSAnalysisManager::Write(){
     /*if(bTreeSource)*/ fFile->Add(fTreeSource);
     /*if(bTreeStepper)*/ fFile->Add(fTreeStepper);
     /*if(bTreeTrack)*/ fFile->Add(fTreeTrack);
-    fFile->Write(0, TObject::kWriteDelete, 0);
     G4cout<<"AVSAnalysisManager::Write - Writing File to " << fFile->GetName() <<G4endl;
+    TString fst = fFile->IsOpen() ? "True" : "False";
+    G4cout<<"File is opened? : "<< fst << G4endl;
+    G4cout<<"In Option : "<< fFile->GetOption() << G4endl;
+    fFile->Write(0, TObject::kOverwrite, 0);
+    G4cout<<"AVSAnalysisManager::Write - File wrtied in " << fFile->GetName() <<G4endl;
 }
 
 void AVSAnalysisManager::SetFilename(TString filename){
