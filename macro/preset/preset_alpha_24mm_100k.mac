@@ -1,0 +1,16 @@
+/run/initialize
+/control/verbose 1
+/tracking/verbose 0
+/event/verbose 0
+/gps/verbose 1
+
+
+/AVS/Source/SetParticlePreset 0
+/AVS/Source/StandDistance     24. mm
+
+# /AVS/Analysis/SetFilename     ./data/preset_alpha_24mm_200k.root
+
+/AVS/Analysis/RecordPrimaryOnly 1
+/AVS/Analysis/SetRecordSet 100
+
+/run/beamOn 100000
