@@ -102,6 +102,7 @@ int Simulation(G4UIExecutive* ui, Arguments arg){
   // owned and deleted by the run manager, so they should not be deleted 
   // in the main() program !
   
+  delete analysisManager;
   delete visManager;
   delete runManager;
 }
