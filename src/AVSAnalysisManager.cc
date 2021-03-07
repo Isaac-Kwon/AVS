@@ -26,14 +26,21 @@ AVSAnalysisManager::AVSAnalysisManager(): fFilename("result.root"){
 }
 
 AVSAnalysisManager::~AVSAnalysisManager(){
+  G4cout<<"AnalysisManager Deleting..."<<G4endl;
   Destroy();
 }
 
 void AVSAnalysisManager::Destroy(){
-  // if(fFile){
-  //   Write();
-  //   fFile->Close("R");
-  // }
+  G4cout<<"AnalysisManager Closing file."<<G4endl;
+  if(fFile){
+    fFile->Close("R");
+    // fFile->Close("");
+  }
+  G4cout<<"AnalysisManager End of closing."<<G4endl;
+  G4cout<<fTreeSource<<"\t"<<fTreeStepper <<"\t"<<fTreeTrack<<G4endl;
+  if (fTreeSource) fTreeSource->Delete();
+  if (fTreeTrack) fTreeTrack->Delete(); 
+  if (fTreeStepper) fTreeStepper->Delete();
 }
 
 
