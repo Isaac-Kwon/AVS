@@ -280,7 +280,7 @@ void AVSAnalysisManager::Write(){
     G4cout<<"File is opened? : "<< fst << G4endl;
     G4cout<<"In Option : "<< fFile->GetOption() << G4endl;
     fFile->Write(0, TObject::kOverwrite, 0);
-    G4cout<<"AVSAnalysisManager::Write - File wrtied in " << fFile->GetName() <<G4endl;
+    G4cout<<"AVSAnalysisManager::Write - File writed in " << fFile->GetName() <<G4endl;
 }
 
 void AVSAnalysisManager::SetFilename(TString filename){
