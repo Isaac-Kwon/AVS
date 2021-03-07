@@ -109,30 +109,37 @@ void AVSAnalysisManager::Book(){
 
     if (!fScoringStandAlpha) { 
       fScoringStandAlpha = detectorConstruction->GetScoringStandAlpha();
-      fScoringVolumes[fScoringStandAlpha] = 1;
     }
 
     if (!fScoringStandGamma) { 
       fScoringStandGamma = detectorConstruction->GetScoringStandGamma();
-      fScoringVolumes[fScoringStandGamma] = 2;
     }
 
     if (!fScoringALPIDEUpper) { 
       fScoringALPIDEUpper = detectorConstruction->GetScoringALPIDE_Upper();   
-      fScoringVolumes[fScoringALPIDEUpper] = 3;
     }
 
     if (!fScoringALPIDEUnder) { 
       fScoringALPIDEUnder = detectorConstruction->GetScoringALPIDE_Under();   
-      fScoringVolumes[fScoringALPIDEUnder] = 4;
     }
 
     if (!fScoringPCBBoard) {
       fScoringPCBBoard = detectorConstruction->GetScoringPCBBoard();   
-      fScoringVolumes[fScoringPCBBoard] = 5;
 
     }
   }
+
+  G4cout<<"Volume Mapping"<<G4endl
+        <<"1\t"<<fScoringStandAlpha<<G4endl
+        <<"2\t"<<fScoringStandGamma<<G4endl
+        <<"3\t"<<fScoringALPIDEUpper<<G4endl
+        <<"4\t"<<fScoringALPIDEUnder<<G4endl
+        <<"5\t"<<fScoringPCBBoard<<G4endl;
+  fScoringVolumes[fScoringStandAlpha] = 1;
+  fScoringVolumes[fScoringStandGamma] = 2;
+  fScoringVolumes[fScoringALPIDEUpper] = 3;
+  fScoringVolumes[fScoringALPIDEUnder] = 4;
+  fScoringVolumes[fScoringPCBBoard] = 5;
 
   G4cout<<"Scoring Mapping"<<G4endl;
   for(auto it=fScoringVolumes.begin(); it!=fScoringVolumes.end(); it++){
