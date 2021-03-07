@@ -9,6 +9,8 @@
 #include "G4Event.hh"
 #include "G4RunManager.hh"
 
+#include "AVSAnalysisManager.hh"
+
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 AVSEventAction::AVSEventAction(AVSRunAction* runAction)
@@ -31,6 +33,8 @@ void AVSEventAction::BeginOfEventAction(const G4Event*)
 
 void AVSEventAction::EndOfEventAction(const G4Event*)
 {
+  AVSAnalysisManager* analysisManager = AVSAnalysisManager::Instance();
+  analysisManager->AutoSave();
   //endofevent   
 }
 
