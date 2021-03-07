@@ -95,7 +95,7 @@ int Simulation(G4UIExecutive* ui, Arguments arg){
   }
 
   // AVSAnalysisManager * analysisManager = AVSAnalysisManager::Instance();
-  analysisManager->Write();
+  // analysisManager->Write();
 
   // Job termination
   // Free the store: user actions, physics_list and detector_description are
