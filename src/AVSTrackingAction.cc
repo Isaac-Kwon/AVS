@@ -27,4 +27,5 @@ void AVSTrackingAction::PreUserTrackingAction(const G4Track* track)
 void AVSTrackingAction::PostUserTrackingAction(const G4Track* track){
   AVSAnalysisManager* analysisManager = AVSAnalysisManager::Instance();
   analysisManager->EndOfTrack(track);
+  analysisManager->AutoSave();
 }
