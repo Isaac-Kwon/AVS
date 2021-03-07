@@ -20,7 +20,13 @@
 
 AVSAnalysisManager* AVSAnalysisManager::fInstance = 0;
 
-AVSAnalysisManager::AVSAnalysisManager(): fFilename("result.root"){
+AVSAnalysisManager::AVSAnalysisManager():
+  fFilename("result.root"),
+  fScoringStandAlpha(0),
+  fScoringStandGamma(0),
+  fScoringALPIDEUpper(0),
+  fScoringALPIDEUnder(0),
+  fScoringPCBBoard(0){
   fInstance = this;
   if(!fCmdDefined) DefineCommand();
 }
