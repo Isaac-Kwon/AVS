@@ -92,7 +92,7 @@ int main(int argc,char** argv)
   // Free the store: user actions, physics_list and detector_description are
   // owned and deleted by the run manager, so they should not be deleted 
   // in the main() program !
-  
+  delete analysisManager;
   delete visManager;
   delete runManager;
 }
